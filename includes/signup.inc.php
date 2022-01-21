@@ -10,8 +10,13 @@ if (isset($_POST["submit"])) {
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
+    if (emptyInputSignup() !== false) {
+        header("location: ../signup.php");
+        exit();  
+    }
 }
 
 else {
     header("location: ../signup.php");
+    exit();
 }

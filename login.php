@@ -5,10 +5,10 @@
     <section class="login-form">
         <h2>Login</h2>
         <div class="login-form-form">
-            <form action="login.inc.php" method="post">
-                <input type="text" name="name" placeholder="username/email...">
-                <input type="password" name="pwd" placeholder="password...">
-                <input type="password" name="pwdrepeat" placeholder="reenter password...">
+            <form action="includes/login.inc.php" method="post">
+                <input type="text" name="name" placeholder="Username/Email...">
+                <input type="password" name="pwd" placeholder="Password...">
+                <input type="password" name="pwdrepeat" placeholder="Reenter Password...">
                 <button type="submit" name="submit">Login</button>
             </form>
         </div>

@@ -2,7 +2,7 @@
 
 $serverName = "localhost";
 $dBUsername = "root";
-$dBPassword = "";
+$dBPassword = "elsey213";
 $dBName = "business-system-php";
 // $port = "3307";
 

@@ -44,6 +44,8 @@ function pwdMatch($pwd, $pwdRepeat) {
     return $result;
 }
 
-function uidExists($conn, $username) {
-    $sql = "SELECT * FROM users WHERE usersUid = ?"
+function uidExists($conn, $username, $email) {
+    $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
+    $stmt = mysqli_stmt_init($conn);
+    
 }

@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
         exit();  
     }
 
-    if (uidExists($conn, $username) !== false) {
+    if (uidExists($conn, $username, $email) !== false) {
         header("location: ../signup.php?error=usernamealreadyinuse");
         exit();  
     }

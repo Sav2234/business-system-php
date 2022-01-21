@@ -36,9 +36,13 @@ if (isset($_POST["submit"])) {
         header("location: ../signup.php?error=usernamealreadyinuse");
         exit();  
     }
+    createUser($conn, $name, $email, $username, $pwd);
 }
+
+
 
 else {
     header("location: ../signup.php");
     exit();
 }
+

@@ -13,4 +13,6 @@ This will be open source for the time being for free use but as development proc
 
 # Fixes, Additions, and Changes
 
+## 01/31/2022: 
+
 All login, logout, and user data have been added. Users can create an account and login.

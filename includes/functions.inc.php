@@ -104,5 +104,20 @@ function loginUser($conn, $username, $pwd) {
         header("location: ../login.php?error=incorrectLogin");
         exit();  
     }
+
+    $pwdHashed = $uidExists["usersPwd"];
+    $checkPwd = password_verify($pwd, $pwdHashed);
+
+    if ($checkPwd === false) {
+        header("location: ../signup.php?incorrectLogin");
+        exit();  
+    }
+
+    else if ($checkPwd === true) {
+        session_start();
+        $_SESSION["userId"] =  = $uidExists["usersId"];
+        $_SESSION["userUid"] =  = $uidExists["usersUid"];
+        header("location: ../index.php");
+        exit();  
     }
 }
